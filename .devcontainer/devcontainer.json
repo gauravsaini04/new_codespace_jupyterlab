@@ -11,5 +11,6 @@
         "configureJupyterlabAllowOrigin": "*"
       }
     },
+    "forwardPorts": [8888],
     "containerUser": "vscode"
 }
