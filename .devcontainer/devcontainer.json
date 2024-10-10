@@ -9,8 +9,11 @@
         "version": "3.10",
         "installJupyterlab": true,
         "configureJupyterlabAllowOrigin": "*"
-      }
+      },
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+      "ghcr.io/devcontainers/features/azure-cli:1": {}
     },
+    "postCreateCommand": "npm install -g @devcontainers/cli",
     "forwardPorts": [8888],
     "containerUser": "vscode"
 }
