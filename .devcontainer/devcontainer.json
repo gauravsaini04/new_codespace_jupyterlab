@@ -7,13 +7,13 @@
     "features": {
       "ghcr.io/devcontainers/features/python": {
         "version": "3.10",
+        "installTools": "false",
         "installJupyterlab": true,
         "configureJupyterlabAllowOrigin": "*"
-      },
-      "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-      "ghcr.io/devcontainers/features/azure-cli:1": {}
+      }
     },
-    "postCreateCommand": "npm install -g @devcontainers/cli",
-    "forwardPorts": [8888],
-    "containerUser": "vscode"
+    "containerEnv": {
+            // testing
+            "PATH" : "/vscode/bin/linux-x64/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/home/vscode/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/share/nvm/current/bin:/usr/local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/share/nvm/current/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin"
+    }
 }
