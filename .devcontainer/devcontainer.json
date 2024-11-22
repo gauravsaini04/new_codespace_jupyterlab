@@ -1,6 +1,6 @@
 {
     "name": "Only Jupyter",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
     "hostRequirements": {
       "cpus": 4
     },
