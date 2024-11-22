@@ -13,5 +13,5 @@
         "configureJupyterlabAllowOrigin": "*"
       }
     },
-    "initializeCommand": "echo 'export PATH=$HOME/.local/bin:$PATH' >> /etc/profile.d/custom_path.sh"
+    "onCreateCommand": "echo 'export PATH=$HOME/.local/bin:$PATH' >> /etc/profile.d/custom_path.sh"
 }
