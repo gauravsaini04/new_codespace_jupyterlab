@@ -13,6 +13,7 @@
         "configureJupyterlabAllowOrigin": "*"
       }
     },
-    "initializeCommand": "echo 'export PATH=$HOME/.local/bin:$PATH' >> /etc/profile.d/custom_path.sh",
-    "containerEnv": { "PATH" : "${localEnv: PATH}" }
+    "containerEnv": {
+        "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
+    }
 }
