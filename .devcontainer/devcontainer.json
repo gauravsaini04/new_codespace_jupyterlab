@@ -13,5 +13,5 @@
         "configureJupyterlabAllowOrigin": "*"
       }
     },
-    "remoteEnv": { "PATH": "${containerEnv:PATH}:/${remoteEnv:HOME}/.local/bin" }
+    "containerEnv": { "PATH": "${containerEnv:PATH}:${remoteEnv:HOME}/.local/bin" }
 }
