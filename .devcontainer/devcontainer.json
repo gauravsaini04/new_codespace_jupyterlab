@@ -13,8 +13,5 @@
         "configureJupyterlabAllowOrigin": "*"
       }
     },
-    "containerEnv": {
-            // testing
-            "PATH": "${remoteEnv:HOME}/.local/bin:${containerEnv:PATH}"
-    }
+    "postCreateCommand": "echo 'export PATH=$HOME/.local/bin:$PATH' >> /etc/profile.d/custom_path.sh"
 }
