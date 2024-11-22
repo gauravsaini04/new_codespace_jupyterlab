@@ -15,10 +15,10 @@
     },
     "remoteEnv": {
             // testing
-            "PATH" : "${localEnv:PATH}"
+            "PATH": "${localEnv:PATH}"
     },
     "containerEnv": {
             // testing
-            "PATH" : "${localEnv:PATH}"
+            "PATH": "${localEnv:PATH}"
     }
 }
