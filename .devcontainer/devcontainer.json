@@ -13,7 +13,7 @@
         "configureJupyterlabAllowOrigin": "*"
       }
     },
-    "containerEnv": {
+    "remoteEnv": {
             // testing
             "PATH" : "${localEnv:PATH}"
     }
